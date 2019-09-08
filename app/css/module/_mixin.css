@@ -1,0 +1,76 @@
+/*Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+}
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}*/
+
+
+/*----TO USE-----
+Media Query Mixins
+
+@mixin atiphone6 {
+  
+}
+
+@mixin at576 {
+
+}
+@mixin at768 {
+
+}
+@mixin at992 {
+}
+
+@mixin at1200 {
+
+}
+*/
+@define-mixin atiphone6 {
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    @mixin-content;
+}
+}
+
+
+@define-mixin at576 {
+  @media (min-width: 576px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin at768 {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin at992 {
+  @media (min-width: 992px) {
+    @mixin-content;
+  }
+}
+@define-mixin at1200 {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+

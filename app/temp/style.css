@@ -380,3 +380,179 @@ body {
   	margin-left: auto;
   	margin-right: auto;
 }
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+}
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}*/
+
+/*----TO USE-----
+Media Query Mixins
+
+@mixin atiphone6 {
+  
+}
+
+@mixin at576 {
+
+}
+@mixin at768 {
+
+}
+@mixin at992 {
+}
+
+@mixin at1200 {
+
+}
+*/
+
+.main_nav {
+	position: fixed;
+	z-index: 1;
+}
+
+.hero_bg {
+	position: relative;
+	background-image: url('../img/hero-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 90vh;
+}
+
+.hero_bg-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-50%) scale(.6);
+	}
+
+.hero_bg-content-title {
+		font-family: 'Marck Script', cursive;
+		font-size: 7rem;
+		font-weight: 100;
+		color: #fff;
+		max-width: 1000px;
+		margin-bottom: 0;
+	}
+
+.hero_bg-content img {
+		padding: 0;
+		margin: 0 0 30px 0;
+	}
+
+.hero_bg-content-button {
+		display: flex;
+		flex-direction: row;
+		transform: translateX(-2.5%);
+	}
+
+.hero_bg-content-btn1 {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid #fff;
+		background-color: transparent;
+		color: #fff;
+		font-size: 1.2rem;
+		cursor: pointer;
+	}
+
+.hero_bg-content-btn1:hover {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid rgba(255, 102, 51, .1);
+		background-color: rgba(255, 102, 51, .6);
+		color: #fff;
+		font-size: 1.2rem;
+		transition: .3s ease-in;
+	}
+
+.hero_bg-content-btn2 {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid #fff;
+		background-color: transparent;
+		color: #fff;
+		font-size: 1.2rem;
+		cursor: pointer;
+	}
+
+.hero_bg-content-btn2:hover {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid rgba(255, 102, 51, .1);
+		background-color: rgba(255, 102, 51, .6);
+		color: #fff;
+		font-size: 1.2rem;
+		transition: .3s ease-in;
+	}
+
+.hero_bg-content-btn2 span {
+		padding: 0px 0px 0px 0px;
+	}
+
+/*Media Query Mixins*/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+.hero_bg-content {
+	transform: translateY(-50%) scale(.5);
+}
+}
+
+@media (min-width: 576px) {
+.hero_bg-content {
+	transform: translateY(-50%) scale(.7);
+}
+  }
+
+@media (min-width: 768px) {
+.hero_bg-content-btn2 span {
+		padding: 0px 17px 0px 17px;
+}	
+.hero_bg-content {
+	transform: translateY(-50%) scale(.8);
+}
+  }
+
+@media (min-width: 992px) {
+.hero_bg-content {
+	transform: translateY(-50%) scale(.9);
+}
+  }
+
+@media (min-width: 1200px) {
+	&-content-btn2 span {
+		padding: 0px 17px 0px 17px;
+	}	
+.hero_bg-content {
+	transform: translateY(-50%) scale(1);
+}
+  }

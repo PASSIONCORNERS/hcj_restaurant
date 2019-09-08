@@ -1,0 +1,114 @@
+.hero_bg {
+	position: relative;
+	background-image: url('../img/hero-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 90vh;
+	
+	&-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-50%) scale(.6);
+	}
+	
+	&-content-title {
+		font-family: 'Marck Script', cursive;
+		font-size: 7rem;
+		font-weight: 100;
+		color: #fff;
+		max-width: 1000px;
+		margin-bottom: 0;
+	}
+	&-content img {
+		padding: 0;
+		margin: 0 0 30px 0;
+	}
+	&-content-button {
+		display: flex;
+		flex-direction: row;
+		transform: translateX(-2.5%);
+	}
+	&-content-btn1 {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid #fff;
+		background-color: transparent;
+		color: #fff;
+		font-size: 1.2rem;
+		cursor: pointer;
+	}
+	&-content-btn1:hover {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid rgba(255, 102, 51, .1);
+		background-color: rgba(255, 102, 51, .6);
+		color: #fff;
+		font-size: 1.2rem;
+		transition: .3s ease-in;
+	}
+	&-content-btn2 {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid #fff;
+		background-color: transparent;
+		color: #fff;
+		font-size: 1.2rem;
+		cursor: pointer;
+	}
+	&-content-btn2:hover {
+		margin-left: 30px;
+		padding: 20px 80px 20px 80px;
+		border: 2px solid rgba(255, 102, 51, .1);
+		background-color: rgba(255, 102, 51, .6);
+		color: #fff;
+		font-size: 1.2rem;
+		transition: .3s ease-in;
+	}
+	&-content-btn2 span {
+		padding: 0px 0px 0px 0px;
+	}
+}
+/*Media Query Mixins*/
+
+@mixin atiphone6 {
+.hero_bg-content {
+	transform: translateY(-50%) scale(.5);
+}
+}
+
+@mixin at576 {
+.hero_bg-content {
+	transform: translateY(-50%) scale(.7);
+}
+}
+@mixin at768 {
+.hero_bg-content-btn2 span {
+		padding: 0px 17px 0px 17px;
+}	
+.hero_bg-content {
+	transform: translateY(-50%) scale(.8);
+}
+}
+@mixin at992 {
+.hero_bg-content {
+	transform: translateY(-50%) scale(.9);
+}
+}
+@mixin at1200 {
+	&-content-btn2 span {
+		padding: 0px 17px 0px 17px;
+	}	
+.hero_bg-content {
+	transform: translateY(-50%) scale(1);
+}
+}

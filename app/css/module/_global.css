@@ -1,3 +1,5 @@
+$mainOrange: #ff6633;
+
 @font-face {
   font-family: 'Focus';
   src: url('../font/focus-regular.eot'); /* IE9 Compat Modes */
@@ -7,6 +9,8 @@
        url('../font/focus-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../font/focus-regular.svg#svgfocusregular') format('svg'); /* Legacy iOS */
 }
+
+
 * {
 	margin: 0;
 	padding: 0;
