@@ -1,0 +1,102 @@
+.ingre_content {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 90vh;
+	position: relative;
+}
+.ingre_content-left {
+	grid-column: 1/13 ;
+	position: relative;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-50%);
+}
+.ingre_content-right {
+	background-image: url('../img/ingre-right-img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	grid-column: 1/13;
+	position: relative;
+	height: 100vh;
+
+	&-info {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-110%);
+
+		h1 {
+			font-family: 'Marck Script', cursive;
+			color: #fff;
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+
+		img:nth-child(2){
+			margin-bottom: 20px;
+		}
+		img:nth-child(4){
+			margin-top: 20px;
+			
+		}
+		img:nth-child(5){
+			margin-top: 20px;
+			
+		}
+		img:nth-child(6){
+			margin-top: 20px;
+			
+		}
+
+		p {
+			color: #fff;
+			font-size: 1rem;
+			max-width: 400px;
+			margin: 0 auto 20px auto;
+		}
+	}
+}
+
+/*Media Query Mixins*/
+
+@mixin atiphone6 {
+  
+}
+
+@mixin at576 {
+
+}
+@mixin at768 {
+
+}
+@mixin at992 {
+
+}
+@mixin at1200 {
+.ingre_content {
+
+}
+.ingre_content-left {
+	grid-column: 1/7 ;
+	position: absolute;
+}
+.ingre_content-right {
+	grid-column: 7/13 ;
+	height: 80vh;
+
+		&-info {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+
+	}
+}
