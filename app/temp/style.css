@@ -491,30 +491,43 @@ header nav {
 	}
 
 header .main_nav-link {
-		justify-content: flex-end;
+		justify-content: center;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, .9);
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		right: 0;
+		text-align: center;
+		width: 100%;
 	}
 
 header .main_nav-link li {
 			list-style: none;
+			margin: 30px;
 
 		}
 
 header .main_nav-link a {
 			text-decoration: none;
-			margin-right: 50px;
+			/*margin-right: 50px;*/
 			font-size: 1.1rem;
-			color: #fff;
+			color: #ff6633;
 		}
 
 header .main_nav-link a:hover {
-			color: #ff6633;
+			color: #fff;
 			transition: .3s ease-in;
 		}
 
 header .main_nav-social {
-		flex: 1;
-		justify-content: flex-start;
+		flex: ;
+		/*justify-content: flex-start;*/
+		justify-content: center;
+		align-items: center;
 		color: rgba(255, 255, 255, .6);
+		/*background-color: pink;*/
+		transform: translateX(-12px);
 	}
 
 header .main_nav-social i {
@@ -538,13 +551,55 @@ header .main_nav-burger {
 		font-size: 2rem;
 	}
 
+.main_nav-link {
+	visibility: hidden;
+	opacity: .8;
+}
+
+/*--active--*/
+
+.nav-active .main_nav-link {
+	visibility: visible;
+	opacity: 1;
+	transition: all .6s ease-in;
+
+}
+
+.nav-active .main_nav-social {
+	color: #ff6633;
+}
+
 /*Media Query Mixins*/
+
+/*		justify-content: center;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, .8);
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		width: 100%;*/
 
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+ header .main_nav-link {
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, .8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+
+	header .main_nav-link li {
+		margin: 20px;
+	}
 }
 
 @media (min-width: 576px) {
@@ -560,6 +615,32 @@ header .main_nav-burger {
   }
 
 @media (min-width: 1200px) {
+header .main_nav-social {
+	transform: translateX(0);
+	color: rgba(255, 255, 255, .6);
+}	
+header .main_nav-link {
+	justify-content: center;
+	flex-direction: row;
+	position: relative;
+	top: auto;
+	transform: translateY(0);
+	background-color: transparent;
+	height: auto;
+	visibility: visible;
+}
+
+	header .main_nav-link li {
+		margin: 0;
+	}
+	header .main_nav-link a {
+		margin-right: 50px;
+		color: #fff;
+	}
+	header .main_nav-link a:hover {
+		margin-right: 50px;
+		color: #ff6633;
+	}
 header .main_nav-burger {
 	visibility: hidden;
 }
