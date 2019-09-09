@@ -91,19 +91,14 @@ header {
 	}
 
 	& .main_nav-burger {
-		
 		position: absolute;
+		margin: 0;
+		padding: 13px 25px 0 0;
+		text-align: right;
+		width: 100%;
 		visibility: visible;
-		
-
-		div {
-
-			background-color: #fff;
-			z-index: 3;
-			width: 25px;
-			height: 5px;
-			margin: 3px;
-		}
+		color: #fff;
+		font-size: 2rem;
 	}
 }
 
@@ -122,9 +117,7 @@ header .main_nav-burger {
 
 }
 @mixin at992 {
-header .main_nav-burger {
 
-}
 }
 @mixin at1200 {
 header .main_nav-burger {

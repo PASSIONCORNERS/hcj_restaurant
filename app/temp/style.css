@@ -528,19 +528,15 @@ header .main_nav-social i:hover {
 		}
 
 header .main_nav-burger {
-		
 		position: absolute;
+		margin: 0;
+		padding: 13px 25px 0 0;
+		text-align: right;
+		width: 100%;
 		visibility: visible;
+		color: #fff;
+		font-size: 2rem;
 	}
-
-header .main_nav-burger div {
-
-			background-color: #fff;
-			z-index: 3;
-			width: 25px;
-			height: 5px;
-			margin: 3px;
-		}
 
 /*Media Query Mixins*/
 
@@ -561,9 +557,6 @@ header .main_nav-burger {
   }
 
 @media (min-width: 992px) {
-header .main_nav-burger {
-
-}
   }
 
 @media (min-width: 1200px) {
