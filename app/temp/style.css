@@ -513,6 +513,7 @@ header .main_nav-link a {
 			/*margin-right: 50px;*/
 			font-size: 1.1rem;
 			color: #ff6633;
+			opacity: .5;
 		}
 
 header .main_nav-link a:hover {
@@ -561,12 +562,20 @@ header .main_nav-burger {
 .nav-active .main_nav-link {
 	visibility: visible;
 	opacity: 1;
-	transition: all .6s ease-in;
-
+	transition: all .8s ease-in;
 }
+
+.nav-active .main_nav-link a {
+		opacity: 1;
+		transition: all .8s ease-in;
+	}
 
 .nav-active .main_nav-social {
 	color: #ff6633;
+}
+
+.burger-active {
+	color: #ff6633!important;
 }
 
 /*Media Query Mixins*/
@@ -636,6 +645,7 @@ header .main_nav-link {
 	header .main_nav-link a {
 		margin-right: 50px;
 		color: #fff;
+		opacity: 1;
 	}
 	header .main_nav-link a:hover {
 		margin-right: 50px;

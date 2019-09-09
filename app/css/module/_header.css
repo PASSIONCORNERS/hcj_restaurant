@@ -81,6 +81,7 @@ header {
 			/*margin-right: 50px;*/
 			font-size: 1.1rem;
 			color: $mainOrange;
+			opacity: .5;
 		}
 		a:hover {
 			color: #fff;
@@ -129,14 +130,20 @@ header {
 .main_nav-link {
 	visibility: visible;
 	opacity: 1;
-	transition: all .6s ease-in;
-
+	transition: all .8s ease-in;
+	
+	a {
+		opacity: 1;
+		transition: all .8s ease-in;
+	}
 }
 .main_nav-social {
 	color: $mainOrange;
 }
 }
-
+.burger-active {
+	color: $mainOrange!important;
+}
 /*Media Query Mixins*/
 
 
@@ -199,6 +206,7 @@ header .main_nav-link {
 	a {
 		margin-right: 50px;
 		color: #fff;
+		opacity: 1;
 	}
 	a:hover {
 		margin-right: 50px;
