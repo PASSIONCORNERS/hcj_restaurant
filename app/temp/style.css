@@ -424,43 +424,153 @@ Media Query Mixins
 
 }
 @mixin at992 {
-}
 
+}
 @mixin at1200 {
 
 }
 */
 
-.main_nav {
+/*.main_nav {
 	position: fixed;
 	z-index: 1;
 	display: flex;
 	background-color: rgba(255, 255, 255, .6);
 	width: 100%;
+	margin: auto;
 	height: 15vh;
 	align-items: center;
 	justify-content: space-around;
-}
 
-.main_nav ul {
+	& ul {
 		display: flex;
 		align-items: center;
 	}
 
-.main_nav li {
+	& li {
 		list-style: none;
 		background-color: blue;
 		margin-right: 50px;
 	}
 
-.main_nav a {
+	& a {
 		color: #fff;
 		text-decoration: none;
 	}
 
-.main_nav-logo {
-		background-color: yellow;
+	&-logo {
+		background-color: pink;
 	}
+}*/
+
+header {
+	z-index: 2;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	padding: 0 10px 0 10px;
+	align-items: center;
+}
+
+header .main_nav-logo, header .main_nav-link, header .main_nav-social {
+		display: flex;
+	}
+
+header .main_nav-logo {
+		justify-content: flex-end;
+		flex: 1;
+		transform: translateY(7px);
+		cursor: pointer;
+		padding-right: 45px;
+	}
+
+header nav {
+		flex: 3;
+	}
+
+header .main_nav-link {
+		justify-content: flex-end;
+	}
+
+header .main_nav-link li {
+			list-style: none;
+
+		}
+
+header .main_nav-link a {
+			text-decoration: none;
+			margin-right: 50px;
+			font-size: 1.1rem;
+			color: #fff;
+		}
+
+header .main_nav-link a:hover {
+			color: #ff6633;
+			transition: .3s ease-in;
+		}
+
+header .main_nav-social {
+		flex: 1;
+		justify-content: flex-start;
+		color: rgba(255, 255, 255, .6);
+	}
+
+header .main_nav-social i {
+			margin-left: 20px;
+			cursor: pointer;
+		}
+
+header .main_nav-social i:hover {
+			color: rgba(255, 255, 255, 1);
+			transition: .3s ease-in;
+		}
+
+header .main_nav-burger {
+		
+		position: absolute;
+		visibility: visible;
+	}
+
+header .main_nav-burger div {
+
+			background-color: #fff;
+			z-index: 3;
+			width: 25px;
+			height: 5px;
+			margin: 3px;
+		}
+
+/*Media Query Mixins*/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+@media (min-width: 576px) {
+header .main_nav-burger {
+
+}
+  }
+
+@media (min-width: 768px) {
+  }
+
+@media (min-width: 992px) {
+header .main_nav-burger {
+
+}
+  }
+
+@media (min-width: 1200px) {
+header .main_nav-burger {
+	visibility: hidden;
+}
+  }
 
 .hero_bg {
 	position: relative;
