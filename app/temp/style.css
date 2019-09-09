@@ -381,6 +381,15 @@ body {
   	margin-right: auto;
 }
 
+.wrapper-nav {
+	overflow: hidden;
+  	padding-left: 18px;
+  	padding-right: 18px;
+  	max-width: 1750px;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
 /*Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
 
@@ -425,7 +434,33 @@ Media Query Mixins
 .main_nav {
 	position: fixed;
 	z-index: 1;
+	display: flex;
+	background-color: rgba(255, 255, 255, .6);
+	width: 100%;
+	height: 15vh;
+	align-items: center;
+	justify-content: space-around;
 }
+
+.main_nav ul {
+		display: flex;
+		align-items: center;
+	}
+
+.main_nav li {
+		list-style: none;
+		background-color: blue;
+		margin-right: 50px;
+	}
+
+.main_nav a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+.main_nav-logo {
+		background-color: yellow;
+	}
 
 .hero_bg {
 	position: relative;
