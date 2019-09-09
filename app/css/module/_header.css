@@ -82,6 +82,7 @@ header {
 			font-size: 1.1rem;
 			color: $mainOrange;
 			opacity: .5;
+
 		}
 		a:hover {
 			color: #fff;
@@ -97,6 +98,7 @@ header {
 		color: rgba(255, 255, 255, .6);
 		/*background-color: pink;*/
 		transform: translateX(-12px);
+		
 
 		i {
 			margin-left: 20px;
@@ -130,15 +132,16 @@ header {
 .main_nav-link {
 	visibility: visible;
 	opacity: 1;
-	transition: all .8s ease-in;
+	transition: all .3s ease-in;
 	
 	a {
 		opacity: 1;
-		transition: all .8s ease-in;
+		transition: all .3s ease-in;
 	}
 }
 .main_nav-social {
 	color: $mainOrange;
+	transition: all .3s ease-in;
 }
 }
 .burger-active {
@@ -218,8 +221,15 @@ header .main_nav-burger {
 }
 }
 
-
-
+.about {
+	height: 200vh;
+}
+.testing {
+	background-color: rgba(0, 0, 0, .8);
+}
+#navbar {
+	transition: top 0.3s;
+}
 
 
 

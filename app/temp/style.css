@@ -514,6 +514,7 @@ header .main_nav-link a {
 			font-size: 1.1rem;
 			color: #ff6633;
 			opacity: .5;
+
 		}
 
 header .main_nav-link a:hover {
@@ -562,16 +563,17 @@ header .main_nav-burger {
 .nav-active .main_nav-link {
 	visibility: visible;
 	opacity: 1;
-	transition: all .8s ease-in;
+	transition: all .3s ease-in;
 }
 
 .nav-active .main_nav-link a {
 		opacity: 1;
-		transition: all .8s ease-in;
+		transition: all .3s ease-in;
 	}
 
 .nav-active .main_nav-social {
 	color: #ff6633;
+	transition: all .3s ease-in;
 }
 
 .burger-active {
@@ -655,6 +657,18 @@ header .main_nav-burger {
 	visibility: hidden;
 }
   }
+
+.about {
+	height: 200vh;
+}
+
+.testing {
+	background-color: rgba(0, 0, 0, .8);
+}
+
+#navbar {
+	transition: top 0.3s;
+}
 
 .hero_bg {
 	position: relative;
