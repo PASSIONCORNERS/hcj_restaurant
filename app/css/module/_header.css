@@ -221,10 +221,8 @@ header .main_nav-burger {
 }
 }
 
-.about {
-	height: 200vh;
-}
-.testing {
+/*-------nav hide-----*/
+.bg-active {
 	background-color: rgba(0, 0, 0, .8);
 }
 #navbar {

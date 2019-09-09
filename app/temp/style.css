@@ -381,14 +381,14 @@ body {
   	margin-right: auto;
 }
 
-.wrapper-nav {
+/*.wrapper-nav {
 	overflow: hidden;
   	padding-left: 18px;
   	padding-right: 18px;
   	max-width: 1750px;
   	margin-left: auto;
   	margin-right: auto;
-}
+}*/
 
 /*Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -658,11 +658,9 @@ header .main_nav-burger {
 }
   }
 
-.about {
-	height: 200vh;
-}
+/*-------nav hide-----*/
 
-.testing {
+.bg-active {
 	background-color: rgba(0, 0, 0, .8);
 }
 
@@ -799,3 +797,41 @@ header .main_nav-burger {
 	transform: translateY(-50%) scale(1);
 }
   }
+
+.about {
+	position: relative;
+	background-image: url('../img/about-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 90vh;
+
+
+}
+
+.about_content {
+		padding: 0 15px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+
+.about_content h1 {
+			font-family: 'Marck Script', cursive;
+			font-size: 2.5rem;
+			font-weight: 100;
+			color: #ff6633;
+			margin-top: 0;
+		}
+
+.about_content p {
+			max-width: 500px;
+			margin: 30px auto;
+		}
+
+.about_content img:last-child {
+			margin-left: 90px;
+		}

@@ -23,7 +23,7 @@ var navbar = document.querySelector('#navbar');
     
   } else {
     document.getElementById("navbar").style.top = "-150px";
-    navbar.classList.add('testing');
+    navbar.classList.add('bg-active');
 
   } 
 
@@ -36,10 +36,10 @@ $(document).ready(function(){
 	$(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
-            $("#navbar").addClass("testing");
+            $("#navbar").addClass("bg-active");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-           $("#navbar").removeClass("testing");
+           $("#navbar").removeClass("bg-active");
         }
     });
 });
