@@ -1,0 +1,9 @@
+.menu {
+	background-image: url('../img/menu-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	grid-column: 1/13;
+	position: relative;
+	height: 100vh;
+}

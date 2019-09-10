@@ -15,7 +15,7 @@ navSlide();
 
 // 1. Javascript hide on scroll
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function abc() {
 var currentScrollPos = window.pageYOffset;
 var navbar = document.querySelector('#navbar');
   if (prevScrollpos > currentScrollPos) {
@@ -30,7 +30,15 @@ var navbar = document.querySelector('#navbar');
   prevScrollpos = currentScrollPos;
 }
 
-// 2. Jquery add background
+// --
+
+
+
+var x = window.matchMedia("(max-width: 375px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+// 2. Jquery change background
 
 $(document).ready(function(){
 	$(function() {

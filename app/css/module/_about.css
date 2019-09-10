@@ -32,6 +32,10 @@
 			margin-left: 90px;
 		}
 	}
+}
 
-
+@mixin atiphone6 {
+	.about_content {
+		transform: translateY(-50%) scale(.85);
+	}
 }

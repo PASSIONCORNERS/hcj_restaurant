@@ -1,7 +1,7 @@
 .ingre_content {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	height: 90vh;
+	height: 100vh;
 	position: relative;
 }
 .ingre_content-left {
@@ -12,6 +12,11 @@
 	text-align: center;
 	width: 100%;
 	transform: translateY(-50%);
+	height: 40vh;
+
+	img {
+		padding-right: 50px;
+	}
 }
 .ingre_content-right {
 	background-image: url('../img/ingre-right-img.png');
@@ -20,7 +25,7 @@
 	background-position: center center;
 	grid-column: 1/13;
 	position: relative;
-	height: 100vh;
+	height: 60vh;
 
 	&-info {
 		position: absolute;
@@ -28,7 +33,7 @@
 		left: 0;
 		text-align: center;
 		width: 100%;
-		transform: translateY(-110%);
+		transform: translateY(-53%);
 
 		h1 {
 			font-family: 'Marck Script', cursive;
@@ -65,7 +70,73 @@
 /*Media Query Mixins*/
 
 @mixin atiphone6 {
-  
+.ingre_content {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: auto;
+	position: relative;
+}
+
+.ingre_content-left {
+	grid-column: 1/13 ;
+	position: relative;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	transform: translate( -10%, -50%) scale(.4);
+	/*height: 30vh;*/
+}
+
+.ingre_content-right {
+	background-image: url('../img/ingre-right-img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	grid-column: 1/13;
+	position: relative;
+	/*height: 70vh;*/
+
+	&-info {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-50%) scale(.7);
+
+		h1 {
+			font-family: 'Marck Script', cursive;
+			color: #fff;
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+
+		img:nth-child(2){
+			margin-bottom: 20px;
+		}
+		img:nth-child(4){
+			margin-top: 20px;
+			
+		}
+		img:nth-child(5){
+			margin-top: 20px;
+			
+		}
+		img:nth-child(6){
+			margin-top: 20px;
+			
+		}
+
+		p {
+			color: #fff;
+			font-size: 1rem;
+			max-width: 400px;
+			margin: 0 auto 20px auto;
+		}
+	}
+}
+
 }
 
 @mixin at576 {
@@ -80,13 +151,17 @@
 @mixin at1200 {
 .ingre_content {
 
+	height: 80vh;
+
 }
 .ingre_content-left {
-	grid-column: 1/7 ;
+	grid-column: 3/6 ;
 	position: absolute;
+	margin-right: 15px;
+	transform: translate(-15%, -50%);
 }
 .ingre_content-right {
-	grid-column: 7/13 ;
+	grid-column: 7/11 ;
 	height: 80vh;
 
 		&-info {
