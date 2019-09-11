@@ -2,7 +2,7 @@
 	background-image: url('../img/menu-bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: auto;
 	height: auto;
 }
 .menu_content {
