@@ -49,3 +49,8 @@ $(document).ready(function(){
 });
 });
 
+// -------------Smooth Scroll--------------
+// -------------Remember to add script GitHub SmoothSroll--------------
+var scroll = new SmoothScroll('.main_nav a[href*="#"]', {
+    speed: 500
+});

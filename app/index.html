@@ -20,12 +20,12 @@
 		</div>
 		<nav class="main_nav">
 			<ul class="main_nav-link">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Ingredients</a></li>
-				<li><a href="">Menu</a></li>
-				<li><a href="">Reviews</a></li>
-				<li><a href="">Reversations</a></li>
+				<li><a href="#heronav">Home</a></li>
+				<li><a href="#aboutnav">About</a></li>
+				<li><a href="#ingrenav">Ingredients</a></li>
+				<li><a href="#menunav">Menu</a></li>
+				<li><a href="#reviewsnav">Reviews</a></li>
+				<li><a href="#reversnav">Reversations</a></li>
 				<div class="main_nav-social">
 					<i class="fab fa-twitter"></i>
 					<i class="fab fa-youtube"></i>
@@ -37,7 +37,7 @@
 			<i class="fas fa-bars"></i>
 		</div>
 	</header>
-	<section class="hero">
+	<section id="heronav" class="hero">
 		<div class="hero_bg">
 			<div class="hero_bg-content">
 				<h1 class="hero_bg-content-title">The right ingredients for the right food</h1>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section id="aboutnav" class="about">
 		<div class="about_content">
 			<h1 class="about_content-title">Discover Our Story</h1>
 			<img src="./img/about-div.png" alt="">
@@ -58,7 +58,7 @@
 		</div>
 	</section>
 	
-	<section class="ingre">
+	<section id="ingrenav" class="ingre">
 			<div class="ingre_content">
 				<div class="ingre_content-left">
 					<img src="./img/ingre-left-img.png" alt="">
@@ -77,7 +77,7 @@
 			</div>
 	</section>
 	
-	<section class="menu">
+	<section id="menunav" class="menu">
 		<div class="menu_content">
 
 			<div class="menu_content-left-top">
@@ -200,7 +200,7 @@
 			<div class="reviews_content-img">
 				<img src="./img/review-bread.png" alt="">
 			</div>
-			<h1>Guest Reviews</h1>
+			<h1 id="reviewsnav" >Guest Reviews</h1>
 			<img src="./img/about-div.png" alt="">
 			<p>The food was excellent and the service was the best we’ve experienced in Venice so far. We’ll definitely come back to try out more of the dishes!</p>
 			<h1>Jhon Hasegools - SooP Inc.</h1>
@@ -215,7 +215,7 @@
 			<div class="revers_content-2">
 				<img src="./img/revers-img2.png" alt="">
 			</div>
-			<div class="revers_content-3">
+			<div id="reversnav"  class="revers_content-3">
 				<div class="revers_content-3-all">
 					<h1>Just the right food</h1>
 					<img src="./img/about-div.png" alt="">
@@ -272,6 +272,9 @@
 			<p>	&copy; THEMEXPERT</p>
 		</div>
 	</footer>
+	
+	<!-- smooth scroll script -->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script rel="script" src="./js/script.js"></script>	
