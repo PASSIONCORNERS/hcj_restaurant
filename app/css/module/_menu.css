@@ -86,7 +86,16 @@
 /*Media Query Mixins*/
 
 @mixin atiphone6 {
-  
+  .menu-underline {
+  	border-top: 0px solid transparent;
+  	border-left: 0px solid transparent;
+  	border-right: 0px solid transparent;
+	 border-bottom: 1px solid;
+	 border-image-source: linear-gradient(85deg, rgba(251, 82, 49, .15), rgba(251, 82, 49, .3), rgba(251, 82, 49, .15));
+	 border-image-slice: 1;
+	 padding: 0 0 10px 0;
+
+}
 }
 
 @mixin at576 {
