@@ -1743,3 +1743,134 @@ input::placeholder {
 				height: 40px;
 			}
   }
+
+footer {
+	background-image: url('../img/footer-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: auto;
+	height: auto;
+}
+
+.footer_logo {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.footer_content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	transform: scale(.8);
+	font-size: .7rem;
+}
+
+.footer_content-phone i {
+			color: #fff;
+		}
+
+.footer_content-phone p {
+			color: rgba(255, 255, 255, .6);
+		}
+
+.footer_content-social {
+		margin-left: 100px;
+		color: rgba(255, 255, 255, .6);
+		cursor: pointer;
+
+	}
+
+.footer_content-social i {
+			padding: 0 5px;
+			transition: .3s ease-in;
+		}
+
+.footer_content-social i:hover {
+			color: #ff6633;
+			transition: .3s ease-in;
+		}
+
+.footer_content-location {
+		margin-left: 60px;
+	}
+
+.footer_content-location i {
+			color: #fff;
+		}
+
+.footer_content-location p {
+			color: rgba(255, 255, 255, .6);
+		}
+
+.footer_cred {
+	text-align: center;
+	padding: 20px 0 50px 0;
+	font-size: .8rem;
+	color: rgba(255, 255, 255, .6);
+}
+
+Media Query Mixins
+
+@mixin atiphone6 {
+  
+}
+
+@media (min-width: 576px) {
+.footer_content {
+	font-size: 1rem;
+}
+  }
+
+@media (min-width: 768px) {
+.footer_content {
+	font-size: 1rem;
+}
+  }
+
+@media (min-width: 992px) {
+.footer_content {
+	font-size: 1rem;
+}
+  }
+
+@media (min-width: 1200px) {
+.footer_content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	font-size: 1rem;
+	transform: scale(1);
+}
+		.footer_content-phone i {
+			color: #fff;
+		}
+		.footer_content-phone p {
+			color: rgba(255, 255, 255, .6);
+		}
+	.footer_content-social {
+		margin-left: 87px;
+		color: rgba(255, 255, 255, .6);
+		cursor: pointer;
+
+	}
+		.footer_content-social i {
+			padding: 0 5px;
+			transition: .3s ease-in;
+		}
+		.footer_content-social i:hover {
+			color: white;
+			transition: .3s ease-in;
+			color: #ff6633;
+		}
+	.footer_content-location {
+		margin-left: 0;
+	}
+		.footer_content-location i {
+			color: #fff;
+		}
+		.footer_content-location p {
+			color: rgba(255, 255, 255, .6);
+		}
+  }
