@@ -1212,3 +1212,37 @@ header .main_nav-burger {
 	/*border: 1px solid yellow;*/
 }
   }
+
+.review {
+	
+}
+
+.reviews_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviews_content-img {
+		margin-top: 150px;
+	}
+
+.reviews_content h1 {
+		font-family: 'Marck Script', cursive;
+		font-size: 2rem;
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+.reviews_content img:nth-child(6) {
+		margin-top: 10px;
+	}
+
+.reviews_content p {
+		max-width: 800px;
+		margin-top: 30px;
+		text-align: center;
+		line-height: 2;
+		font-size: 1.2rem;
+	}
